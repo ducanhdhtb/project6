@@ -1,0 +1,260 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+html, body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    background: #fff;
+    box-sizing: border-box;
+}
+.row:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    float: left;
+}
+.col-1{
+	width: 8.3%;
+}
+.col-2{
+	width: 16.6%;
+}
+.col-3{
+	width: 24.9%;
+}
+.col-4{
+	width: 33.333%;
+}
+.col-5{
+	width: 41.6%;
+}
+.col-6{
+	width: 49.8%;
+}
+.col-7{
+	width: 58.3%;
+}
+.col-8{
+	width: 66.4%;
+}
+.col-9{
+	width: 74.9%;
+}
+.col-10{
+	width: 83.3%;
+}
+.col-11{
+	width: 91.6%;
+}
+.col-12{
+	width: 100%;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+.container {
+   	width:1174px;
+   	max-width: 100%;
+    margin:auto;
+}
+
+.header_top {
+    background: #573c27;
+    width: 100%;
+    height: 38px;
+    line-height: 1.2em;
+}
+.header_top-box{
+	padding: 0px 1em;
+	
+}
+.header-top-left{
+	width: 54.5%;
+	float: left;
+	margin-top:8px;
+}
+.header-top-left .header_top-box .header-top-left .box2{
+	
+}
+.header_top-box {
+    padding: 0px 1em;
+}
+select {
+    border: none;
+    background: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.65em;
+}
+.header_top .header_top-box .header-top-left .box1 {
+    float: left;
+    margin-right: 20%;
+}
+.header-top-right{
+	float: right;
+}
+.header-top-right ul li a {
+    color: #fff;
+    display: inline-block;
+    margin: 10px;
+    font-size: 0.8125em;
+}
+.header-top-right ul li {
+	display: inline;
+}
+/* End header top */
+.header-bottom {
+    padding: 3em 0 7em;
+}
+.header_bottom-box {
+    padding: 0px 1em;
+}
+.header_bottom_left {
+    width: 40%;
+    float: left;
+}
+.logo {
+    float: left;
+    width: 25%;
+    margin-right: 25%;
+}
+ul.clock {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: left;
+    width: 25%;
+    margin-top: 8px;
+}
+i.clock_icon {
+    width: 30px;
+    height: 30px;
+    background: url(../images/img-sprite.png)no-repeat -2px -3px;
+    float: left;
+}
+ul.clock li.clock_desc {
+    color: #100802;
+    font: 400 13px/13px 'Raleway', sans-serif;
+    overflow: hidden;
+    margin-top: 8px;
+}
+.header_bottom_right {
+    width: 60%;
+    float: right;
+}
+.search {
+    float: left;
+    width: 70%;
+    margin-right: 6%;
+}
+.search input[type="text"] {
+    padding: 15px;
+    outline: none;
+    color: #B6B2AE;
+    background: #fff;
+    border: 1px solid #f8d5d1;
+    width: 85%;
+    line-height: 1.5em;
+    font: 500 13px/13px 'Raleway', sans-serif;
+    -webkit-appearance: none;
+}
+.search input[type="submit"] {
+    background: url(../images/search.png) no-repeat 24px 10px #e05b5b;
+    padding: 15px 38px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    outline: none;
+}
+ul.bag {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    float: left;
+    width: 24%;
+}
+i.bag_left {
+    width: 80px;
+    height: 46px;
+    background: url(../images/img-sprite.png)no-repeat -32px 3px #e05b5b;
+    float: left;
+    border-right: 1px solid #fff;
+}
+ul.bag li.bag_right {
+    background: #e05b5b;
+    padding: 16.5px 10px;
+    overflow: hidden;
+}
+ul.bag li.bag_right p {
+    font: 500 14px/14px 'Raleway', sans-serif;
+    color: #fff;
+}
+/* End Header bottom */
+.menu {
+    border-bottom: 3px solid #e05b5b;
+    width: 100%;
+    height: 2em;
+}
+.menu_box{
+	width: 100%;
+}
+.menu_box>.container>ul>li{
+	list-style-type: none;
+	float: left;
+}
+.menu_box>.container>ul>li>a {
+    color: #100802;
+    padding: 8px 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.menu_box.container>ul>li>a.active {
+    color: #fff;
+    background: #e05b5b;
+    text-transform: uppercase;
+}
+
+.menu_box>.container>ul>li>a:hover{
+	background:red ;
+	color:#ffffff;
+}
+
+.mega-menu{
+	position: relative;
+}
+.mega-menu a.active {
+    background: #e05b5b;
+    color: white!important;
+}
+.dropdown {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    top: 0px;
+    left: 0px;
+    margin: 10px auto;
+    padding: 20px 30px 20px;
+    z-index: 99;
+    box-shadow: 0px 2px 4px #777;
+    margin-top: 25px;
+    display: none;
+}
+.dropdown a {
+    color: #555;
+    display: inline-block;
+    padding: 0.7em 0px 0.3em;
+    font-family: 'Raleway', sans-serif;
+}
+.dropdown a:hover{
+	color:#f84545;
+}
+ul.mega-menu>li:hover .dropdown{
+	display: block;
+}
