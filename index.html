@@ -4,8 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Project 6 -Gifty</title>
+	<link rel="stylesheet" href="css/responsiveslides.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="js/js.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	<script>
+	  $(function() {
+	    $(".rslides").responsiveSlides();
+	  });
+	</script>
 </head>
 <body>
 	<!-- Start Header top -->
@@ -155,5 +163,17 @@
 		</div>
 	</div><!-- End Menu -->
 	
+	<!-- Start Slider -->
+	<div class="row">
+		<div class="container">
+			<ul class="rslides">
+			  <li><img src="images/slider1.jpg" alt=""></li>
+			  <li><img src="images/slider2.jpg" alt=""></li>
+			  <li><img src="images/slider3.jpg" alt=""></li>
+			</ul>
+		</div>		
+	</div>
+	
+	<!-- End Slider -->
 </body>
 </html>
