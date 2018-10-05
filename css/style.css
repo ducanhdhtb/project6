@@ -259,3 +259,30 @@ ul.mega-menu>li:hover .dropdown{
 	display: block;
 }
 /* End menu */
+.box-1 {
+    background: url(../images/feature.jpg)no-repeat;
+    min-height: 100px;
+}
+i.lock {
+    background-position: -109px 6px;
+}
+i.clock1, i.vehicle, i.dollar, i.lock {
+    width: 80px;
+    height: 94px;
+    background: url(../images/img-sprite.png)no-repeat;
+    float: left;
+    background-position: -113px 9px;
+}
+
+.ship {
+    margin-top: 2em;
+}
+.box-1 p {
+    padding-top: 2.2em;
+    font: 500 16px/16px 'Raleway', sans-serif;
+    color: #fff;
+    line-height: 1.5em;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* End ship */
