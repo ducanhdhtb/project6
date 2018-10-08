@@ -1,68 +1,133 @@
 *{
-	padding:0px;
-	margin:0px;
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
 }
 html, body {
     font-family: 'Raleway', sans-serif;
     font-size: 100%;
     background: #fff;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* My css defined general */
+.row:before{
+    display: table;
+    content: "";
 }
 .row:after{
-	display: table;
-	content: "";
-	clear: both;
+    display: table;
+    content: "";
+    clear: both;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
 }
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-.col-1{
-	width: 8.3%;
+
+.col-12 {
+  width: 100%;
 }
-.col-2{
-	width: 16.6%;
+.col-11 {
+  width: 91.66666667%;
 }
-.col-3{
-	width: 24.9%;
+.col-10 {
+  width: 83.33333333%;
 }
-.col-4{
-	width: 33.333%;
+.col-9 {
+  width: 75%;
 }
-.col-5{
-	width: 41.6%;
+.col-8 {
+  width: 66.66666667%;
 }
-.col-6{
-	width: 49.8%;
+.col-7 {
+  width: 58.33333333%;
 }
-.col-7{
-	width: 58.3%;
+.col-6 {
+  width: 50%;
 }
-.col-8{
-	width: 66.4%;
+.col-5 {
+  width: 41.66666667%;
 }
-.col-9{
-	width: 74.9%;
+.col-4 {
+  width: 33.33333333%;
 }
-.col-10{
-	width: 83.3%;
+.col-3 {
+  width: 25%;
 }
-.col-11{
-	width: 91.6%;
+.col-2 {
+  width: 16.66666667%;
 }
-.col-12{
-	width: 100%;
-}
-ul{
-	list-style-type: none;
-}
-a{
-	text-decoration: none;
+.col-1 {
+  width: 8.33333333%;
 }
 .container {
-   	width:1174px;
-   	max-width: 100%;
-    margin:auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container:before{
+    display: table;
+    content:"";
+}
+.container:after{
+    display: table;
+    content:"";
+}
+.container-fluid{
+    width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align:right;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* End my css defined general */
 
 .header_top {
     background: #573c27;
@@ -71,16 +136,15 @@ a{
     line-height: 1.2em;
 }
 .header_top-box{
-	padding: 0px 1em;
-	
+    padding: 0px 1em;   
 }
 .header-top-left{
-	width: 54.5%;
-	float: left;
-	margin-top:8px;
+    width: 54.5%;
+    float: left;
+    margin-top:8px;
 }
 .header-top-left .header_top-box .header-top-left .box2{
-	
+    
 }
 .header_top-box {
     padding: 0px 1em;
@@ -97,7 +161,7 @@ select {
     margin-right: 20%;
 }
 .header-top-right{
-	float: right;
+    float: right;
 }
 .header-top-right ul li a {
     color: #fff;
@@ -106,7 +170,7 @@ select {
     font-size: 0.8125em;
 }
 .header-top-right ul li {
-	display: inline;
+    display: inline;
 }
 /* End header top */
 .header-bottom {
@@ -188,7 +252,7 @@ i.bag_left {
 }
 ul.bag li.bag_right {
     background: #e05b5b;
-    padding: 16.5px 10px;
+    padding: 1em 0.5em;
     overflow: hidden;
 }
 ul.bag li.bag_right p {
@@ -202,11 +266,11 @@ ul.bag li.bag_right p {
     height: 2em;
 }
 .menu_box{
-	width: 100%;
+    width: 100%;
 }
 .menu_box>.container>ul>li{
-	list-style-type: none;
-	float: left;
+    list-style-type: none;
+    float: left;
 }
 .menu_box>.container>ul>li>a {
     color: #100802;
@@ -222,12 +286,12 @@ ul.bag li.bag_right p {
 }
 
 .menu_box>.container>ul>li>a:hover{
-	background:red ;
-	color:#ffffff;
+    background:red ;
+    color:#ffffff;
 }
 
 .mega-menu{
-	position: relative;
+    position: relative;
 }
 .mega-menu a.active {
     background: #e05b5b;
@@ -253,10 +317,10 @@ ul.bag li.bag_right p {
     font-family: 'Raleway', sans-serif;
 }
 .dropdown a:hover{
-	color:#f84545;
+    color:#f84545;
 }
 ul.mega-menu>li:hover .dropdown{
-	display: block;
+    display: block;
 }
 /* End menu */
 .box-1 {
@@ -286,3 +350,104 @@ i.clock1, i.vehicle, i.dollar, i.lock {
     font-weight: bold;
 }
 /* End ship */
+.column-center h1 {
+    color: #583d28;
+    font: 600 40px/40px 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.column-center h2 {
+    color: #583d28;
+    font: 500 16px/30px 'Raleway', sans-serif;
+}
+
+.column-center-content {
+    text-align: center;
+    border-bottom: 3px dotted #ECECEC;
+    margin: 1.5em 0 2em;
+}
+.column-center h2 {
+    color: #583d28;
+    font: 500 16px/30px 'Raleway', sans-serif;
+    margin-bottom: 2em;
+}
+/* End column center */
+i.star {
+    width: 30px;
+    height: 30px;
+    background: url(../images/img-sprite.png)no-repeat -456px -18px;
+    float: left;
+    margin-right: 1em;
+    line-height: 50px;
+    margin-left: 1em;
+}
+.seller-title h2 {
+    line-height: 38px;
+    margin-left: 0px;
+}
+.seller-grid-content {
+    background: transparent;
+    padding: 0.6em 0;
+}
+.row.seller-title {
+    background: #f6eddc;
+    min-height: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    height: 50px;
+}
+
+.grid img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.inner-box {
+    border: 1px solid #E7DFD1;
+}
+.des {
+    border-top: 1px solid #cac0ae;
+    text-align: center;
+    padding: 1em 0 0 0;
+}
+.des h3 {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.des h4 {
+    color: #1bccf7;
+    margin-bottom: 1.5em;
+    text-shadow: 1px 0px 0px #414141;
+    -webkit-text-shadow: 1px 0px 1px #DFDFDF;
+    -moz-text-shadow: 1px 0px 1px #DFDFDF;
+    -o-text-shadow: 1px 0px 1px #DFDFDF;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+.row.seller-content {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 2em;
+}
+.sale-box {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    overflow: hidden;
+    height: 40px;
+    width: 59px;
+    background: url(../images/img-sprite.png) no-repeat -3px -109px;
+}
+.col-3.grid {
+    padding-right: 0px;
+}
+/* Css for flexisel */
+.nbs-flexisel-nav-left {
+    left: 0px;
+    background: url(../images/img-sprite.png) no-repeat -145px -106px;
+}
+.nbs-flexisel-nav-right {
+    right: 0px;
+    background: url(../images/img-sprite.png) no-repeat -182px -106px;
+}
+/* End flexisel */
